@@ -1,0 +1,20 @@
+.person {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-family: "Noto Sans";
+}
+.person a {
+  text-decoration: none;
+  color: black;
+}
+.person .about {
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+}
+.person .userName {
+  font-size: 18px;
+  color: #777777;
+}

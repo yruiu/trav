@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {BrowserRouter} from "react-router-dom";
+import Header from "./components/Header";
+import Routers from "./routers";
+import {useAuth} from "./hooks/auth.hook";
+import {UseAuthContext} from "./context/AuthContext";
 
 function App() {
+    const {login, logout, token, userId, isReady}=useAuth();
+    const islogin=!!token;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <UseAuthContext.Provider value={{login, logout, token, userId, isReady}}>
+      <BrowserRouter>
+        <Header />
+          <Routers auth={islogin}/>
+      </BrowserRouter>
+        </UseAuthContext.Provider>
     </div>
   );
 }

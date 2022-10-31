@@ -1,0 +1,19 @@
+div{
+  color: #000;
+  .cards{
+    font-family: 'Noto Sans';
+    padding-top: 1%;
+    padding-bottom: 30%;
+    .img{
+      width: 50%;
+      float: right;
+    }
+    .country {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 140%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header{
+  background: #E8F3F3;
+  text-align: center;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+  .header-text{
+    font-size: 30pt;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: black;
+    }
+    .note{
+      background: #00AAA1;
+      color: #fff;
+    }
+  }
+}
