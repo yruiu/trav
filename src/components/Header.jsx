@@ -7,6 +7,7 @@ function Header(props) {
             <div className="container">
             <Link to={'/'} className="header-text"><span className={'note'}>Note</span>book</Link>
                 <Link to={'/createTravel'} >Add travel</Link>
+                <Link to={'/login'} >Log in</Link>
             </div>
         </div>
     );
